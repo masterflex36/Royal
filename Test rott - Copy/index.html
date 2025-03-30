@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA Rottwilers - Premium Rottweiler Puppies</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="attached_assets/logo (2).png" alt="Royal Rottweiler Logo" class="logo-img">
+                <span>Royal Rottweiler Champions <span class="logo-rrc">(RRC)</span></span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#puppies">Available Puppies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Premium Rottweiler Puppies</h1>
+        <p>Find your perfect companion from our champion bloodlines</p>
+        <a href="#puppies" class="cta-button">View Available Puppies</a>
+    </section>
+
+    <section id="puppies" class="puppies">
+        <h2>Available Puppies</h2>
+        <div class="puppy-grid">
+            <div class="puppy-card">
+                <img src="attached_assets/card 2.jpg" alt="Max">
+                <h3>Max</h3>
+                <p>Male, 8 weeks old</p>
+                <p>Price: $450</p>
+                <button onclick="showAKCForm('Max')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 3.jpg" alt="Luna">
+                <h3>Luna</h3>
+                <p>Female, 10 weeks old</p>
+                <p>Price: $475</p>
+                <button onclick="showAKCForm('Luna')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 4.jpg" alt="Zeus">
+                <h3>Zeus</h3>
+                <p>Male, 12 weeks old</p>
+                <p>Price: $425</p>
+                <button onclick="contact('Zeus')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 5.jpg" alt="Athena">
+                <h3>Athena</h3>
+                <p>Female, 10 weeks old</p>
+                <p>Price: $480</p>
+                <button onclick="contact('Athena')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 6.jpg" alt="Thor">
+                <h3>Thor</h3>
+                <p>Male, 8 weeks old</p>
+                <p>Price: $460</p>
+                <button onclick="contact('Thor')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 7.jpg" alt="Luna">
+                <h3>Bella</h3>
+                <p>Female, 14 weeks old</p>
+                <p>Price: $440</p>
+                <button onclick="contact('Bella')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 8.jpg" alt="Apollo">
+                <h3>Apollo</h3>
+                <p>Male, 16 weeks old</p>
+                <p>Price: $400</p>
+                <button onclick="contact('Apollo')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 9.jpg" alt="Hera">
+                <h3>Hera</h3>
+                <p>Female, 9 weeks old</p>
+                <p>Price: $490</p>
+                <button onclick="contact('Hera')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 10.jpg" alt="Mars">
+                <h3>Mars</h3>
+                <p>Male, 11 weeks old</p>
+                <p>Price: $470</p>
+                <button onclick="contact('Mars')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 11.jpg" alt="Venus">
+                <h3>Venus</h3>
+                <p>Female, 13 weeks old</p>
+                <p>Price: $455</p>
+                <button onclick="contact('Venus')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 12.jpg" alt="Neptune">
+                <h3>Neptune</h3>
+                <p>Male, 15 weeks old</p>
+                <p>Price: $445</p>
+                <button onclick="contact('Neptune')">Inquire Now</button>
+            </div>
+            <div class="puppy-card">
+                <img src="attached_assets/card 13.jpg" alt="Diana">
+                <h3>Diana</h3>
+                <p>Female, 7 weeks old</p>
+                <p>Price: $485</p>
+                <button onclick="contact('Diana')">Inquire Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are dedicated breeders of premium Rottweilers with over 4 years of experience. Our puppies come from champion bloodlines and are raised with love and care.</p>
+        <ul class="features">
+            <li>AKC Registered</li>
+            <li>Health Guaranteed</li>
+            <li>Veterinary Checked</li>
+            <li>Socialized from Birth</li>
+        </ul>
+    </section>
+
+    <section id="puppy-video" class="video-section">
+        <h2>Watch Our Puppies Play</h2>
+        <div class="videos-flex-container">
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="attached_assets/06516c5958a1450a19ab79b29f23470d.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+            <div class="video-container">
+                <video controls width="100%">
+                    <source src="attached_assets/fc1d8a2441d36451a8b3d56c72984250.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <h2>Visit Our Location</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.9!3d40.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM0LCsDQyJzAwLjAiTiA3M8KwNTQnMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="akcForm" class="akc-form" style="display: none;">
+            <h3>Puppy Interest Form</h3>
+            <input type="text" placeholder="Your Full Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" id="phone1" class="phone-input" placeholder="Your Phone" required>
+            <input type="text" id="selectedPuppy" readonly>
+            <select required>
+                <option value="">Do you have experience with Rottweilers?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <select required>
+                <option value="">Do you have a fenced yard?</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <textarea placeholder="Tell us about your home environment" required></textarea>
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" id="phone1" class="phone-input" placeholder="Your Phone" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Royal Rottweiler Champions</h3>
+                <p>Premium AKC Registered Rottweiler Puppies</p>
+                <p>License #: AKC-123456</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info.royalrottweiler@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Breeder Lane, NY</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/+1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Royal Rottweiler Champions. All rights reserved. | AKC Certified Breeder</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
+
+    <section id="feedback" class="feedback">
+        <h2>Customer Feedback</h2>
+        <div class="feedback-container">
+            <div class="comments-section">
+                <h3>Recent Comments</h3>
+                <div id="comments-list">
+                    <!-- Example comments -->
+                    <div class="comment">
+                        <div class="comment-header">
+                            <strong>John D.</strong>
+                            <span>2 days ago</span>
+                        </div>
+                        <p>Amazing Rottweiler puppies! Very healthy and well-trained.</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-header">
+                            <strong>Sarah M.</strong>
+                            <span>1 week ago</span>
+                        </div>
+                        <p>Great experience with RRC. Professional breeders who really care.</p>
+                    </div>
+                </div>
+                <form id="comment-form" onsubmit="addComment(event)">
+                    <input type="text" id="comment-name" placeholder="Your Name" required>
+                    <textarea id="comment-text" placeholder="Your Comment" required></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </div>
+    </section>
